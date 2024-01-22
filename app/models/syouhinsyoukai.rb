@@ -1,0 +1,2 @@
+class Syouhinsyoukai < ApplicationRecord
+end

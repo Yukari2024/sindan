@@ -1,0 +1,6 @@
+<h1>ネコのキモチ</h1>
+<% @posts.each do |f| %>
+  <% if t.category == "cat" %>  #ここがポイント！ categoryカラムにcatと格納されているものだけを表示している！
+  <p>内容:<%= t.content %></p>
+  <% end %>
+<% end %>

@@ -1,0 +1,95 @@
+// Place all the styles related to the perfumes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.start{
+   text-align: center;
+}
+
+.are{
+    margin: 30px auto 30px auto;
+    font-size: 50px;
+    text-align: center;
+}
+
+.sindanhajime{
+    text-align: center;
+    font-size: 50px;
+}
+
+.yagi{
+    text-align: center;
+    font-size: 60px;
+}
+
+.hr{
+    border: 1px solid black;
+    margin-top: 50px;
+}
+
+.hr2{
+    border: 1px solid black;
+}
+
+.hr3{
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+.hr4{
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+.toppage{
+    font-size: 30px;
+    text-align: right;
+}
+
+.bunsyou{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tweet{
+    text-align: center;
+}
+
+.tweet-container{
+    text-align: center;
+}
+
+.intoro{
+    text-align: center;
+}
+
+.parent{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.child{
+    color: black;
+ border: solid 1px #fff;
+ text-align: center;
+ line-height: 100px;
+ width: 200px;
+ height: 200px;
+ background-color: #FCEFC1;
+ font-size: 30px;
+}
+
+.post{
+    background-image: url(index-haikei10.jpg);
+    
+    background-repeat: repeat;
+   
+}
+
+.sinkitoukou2{
+    margin-bottom: 50px;
+    font-size: 40px;
+   
+}

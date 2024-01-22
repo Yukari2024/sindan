@@ -1,0 +1,2 @@
+class SyouhinsyoukaisController < ApplicationController
+end

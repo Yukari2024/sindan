@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!--この文章がHTML文章であることを伝える要素です。-->
+<html lang="ja"><!--言語の指定-->
+    <head><!--ページに表示されない情報(サイトの裏側の設定)-->
+        <meta charset="utf-8">
+        <title>食べられる紙診断スタート</title><!--ブラウザのタブのタイトルを指定-->
+    </head>
+
+    <body class="post">
+        <div class="hr">
+        </div>
+        <div class="hr4">
+        </div> 
+        <div class= "yagi">
+        <h4>白ヤギ・黒ヤギ診断とは？</h4>
+        </div>
+        <div class="hr2">
+        </div>   
+        <div class="hr3">
+        </div>   
+        <div class="bunsyou">
+        <br>
+ 白ヤギ・黒ヤギ診断とはあなたにおすすめの食べられる紙について診断するものです。<br>
+ <br>
+ おすすめで出てくる食べられる紙は合計で３種類あります。<br>
+ <br>
+ 白ヤギ・黒ヤギ診断という名前の由来はやぎさんゆうびんという童謡から<br>
+ <br>
+ 白ヤギと黒ヤギが互いの手紙を食べてしまうというところから食べられる紙を連想したからです。<br>
+        </div>
+        <div class="start">
+           <div class="are">
+            <h6>Are you ready?</h6>
+            </div>
+            <div class="sindanhajime">
+            <%= link_to "診断を始める", new_perfume_path, class: "link" %>
+            </div>
+            <div class="toppage">
+            <%= link_to "感想一覧ページへ→", posts_path %>
+            </div>
+     </div>
+    </body>

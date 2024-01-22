@@ -1,0 +1,6 @@
+<h1>ハダカデバネズミのキモチ</h1>
+<% @posts.each do |f| %>
+  <% if t.category == "hadakadebanezumi" %>  #ここがポイント！ categoryカラムにhadakadebanezumiと格納されているものだけを表示している！
+  <p>内容:<%= t.content %></p>
+  <% end %>
+<% end %>

@@ -1,0 +1,49 @@
+// Place all the styles related to the Syouhinsyoukais controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.hr{
+    border: 1px solid black;
+    margin-top: 50px;
+}
+
+.hr2{
+    border: 1px solid black;
+}
+
+.hr3{
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+.hr4{
+    border: 1px solid black;
+    margin-top: 5px;
+}
+
+.toppage{
+    font-size: 30px;
+    text-align: right;
+}
+
+.sindanhajime2{
+    font-size: 30px;
+    text-align: left;
+}
+
+.parent{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.child{
+    color: black;
+ border: solid 1px #fff;
+ text-align: center;
+ line-height: 100px;
+ width: 200px;
+ height: 200px;
+ background-color: #FCEFC1;
+ font-size: 30px;
+}

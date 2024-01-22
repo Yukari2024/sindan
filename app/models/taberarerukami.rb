@@ -1,0 +1,2 @@
+class Taberarerukami < ApplicationRecord
+end

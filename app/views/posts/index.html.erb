@@ -1,0 +1,55 @@
+<body class="post">
+
+<h1>感想一覧ページ</h1>
+
+<div class="post-kensaku">
+ <div class="kensaku">
+  <%= form_tag({controller:"posts",action:"index"}, method: :get) do %>
+  <%= text_field_tag :search %>
+ </div>
+  <div class="kensaku-botan">
+  <%= submit_tag '検索'  %>
+  </div>
+  <% end %>
+</div>
+  <div class="posts-container">
+
+
+
+
+
+    <% @posts.each do |t| %>
+      <div class="post-container">
+        <%= t.user.email %>
+        <div class="post-images">
+        <%= image_tag t.image_url, size: "550x750" if t.image? %>
+        
+        </div>
+
+        <div class="kansou">
+        <p><%= t.kansou %></p>
+        </div>
+
+        <div class="bunrui">
+        <%= t.category %>
+        </div>
+
+
+        <% if user_signed_in? && current_user.id == t.user_id %>
+
+        <div class="hensyuu">
+        <%= link_to "編集する", edit_post_path(t.id) %>
+        <%= button_to "削除する", post_path(t.id), method: :delete %>
+        </div>
+        
+      <% end %> 
+      </div>
+
+    <% end %>
+
+    
+  </div>
+  <div class="sinkitoukou">
+  <%= link_to "←新規投稿へ", new_post_path %>
+  </div>
+</body>

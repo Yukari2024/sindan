@@ -1,0 +1,2 @@
+class SeihousController < ApplicationController
+end

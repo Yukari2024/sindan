@@ -1,0 +1,50 @@
+<body class="post">
+<%= form_for(@perfume, class: 'form-horizontal', role: 'form') do |f| %>
+  <div class="container-sindan">
+      <div class="row">
+          <div class="col-12">
+              <p>Question1. どちらかと言うと…</p>
+          </div>
+          <div class="col-6">
+              <p><%= f.check_box :question, {multiple: true}, "1", nil %>好奇心はある方だ</p>
+          </div>
+          <div class="col-6">
+              <p><%= f.check_box :question, {multiple: true}, "2", nil %>好奇心はないほうだ</p>
+          </div>
+
+          <div class="col-12">
+              <p>Question2. どちらかというとどんなジャンルの動画（YouTube等）を見る？</p>
+          </div>
+          <div class="col-6">
+              <p><%= f.check_box :question, {multiple: true}, "1", nil %>面白い系</p>
+          </div>
+          <div class="col-6">
+              <p><%= f.check_box :question, {multiple: true}, "2", nil %>ほのぼの系</p>
+          </div>
+
+          <div class="col-12">
+              <p>Question3. 将来なりたい職業は？</p>
+          </div>
+          <div class="col-6">
+              <p><%= f.check_box :question, {multiple: true}, "1", nil %>自分が主役だ系</p>
+          </div>
+          <div class="col-6">
+              <p><%= f.check_box :question, {multiple: true}, "2", nil %>縁の下の力持ち系</p>
+          </div>
+
+          <div class="col-12">
+              <p>Question4. 今の気分は？</p>
+          </div>
+          <div class="col-6">
+              <p><%= f.check_box :question, {multiple: true}, "1", nil %>ポジティブ</p>
+          </div>
+          <div class="col-6">
+              <p><%= f.check_box :question, {multiple: true}, "2", nil %>ネガティブ</p>
+          </div>
+      </div>
+  </div>
+  <div class="sindanbotan">
+      <%= f.submit "post" %>
+  </div>
+<% end %>
+</body>

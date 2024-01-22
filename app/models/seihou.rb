@@ -1,0 +1,2 @@
+class Seihou < ApplicationRecord
+end

@@ -1,0 +1,39 @@
+<body class="post">
+
+<h1>感想新規投稿ページ</h1>
+
+
+
+
+<%= form_for @posts do |f| %>
+  <div class="field">
+    <div class="ga">
+    <%= f.label :画像 %>
+    </div>
+  
+   
+    <%= f.file_field :image %>
+  </div>
+  
+  <div class="kan">
+  <%= f.label :content,"感想" %>
+  </div>
+
+  <div class="kan-saizu">
+  <%= f.text_field :kansou, :size => 50%>
+  </div>
+
+
+  <div class="bun">
+  <%= f.select :category, [["ASMR系の紙", "ASMR系の紙"], ["フィルム系", "フィルム系"], ["弁当系", "弁当系"]], include_blank: "どの投稿？" %>
+  </div>   
+  
+  <div class="toukou">
+  <%= f.submit "投稿する" %>
+  </div>
+ <% end %>
+
+ <div class="itiran">
+<%= link_to "←一覧ページに戻る", posts_path %>
+ </div>
+</body>

@@ -1,0 +1,101 @@
+<body class="post">
+<div class="intoro">
+<h5>診断結果</h5>
+<p>あなたにおすすめの食べられる紙は…</p>
+</div>
+<div class="tweet-container">
+<div class="tweet">
+    <% if @perfume.question == "1111" %>
+    <h6>ASMR系の紙</h6>
+    <p>パリッとした音が気持ちいい</p>
+    <p>食べた感想は味がしっかりついて美味しい！知育玩具みたい！</p>
+
+    <% elsif @perfume.question == "1112" %>
+    <h6>フィルム系</h6>
+    <p>完全にフィルム状の見た目</p>
+    <p>食べた感想はオブラート。無味。見た目のインパクトは大きい！！</p>
+
+    <% elsif @perfume.question == "1121" %>
+    <h6>弁当系</h6>
+    <p>日常に可愛さがプラス</p>
+    <p>お弁当が華やかになる</p>
+
+    <% elsif @perfume.question == "1122" %>
+    <h6>フィルム系</h6>
+    <p>完全にフィルム状の見た目</p>
+    <p>食べた感想はオブラート。無味。見た目のインパクトは大きい！！</p>
+
+    <% elsif @perfume.question == "1211" %>
+    <h6>弁当系</h6>
+    <p>日常に可愛さがプラス</p>
+    <p>お弁当が華やかになる</p>
+
+    <% elsif @perfume.question == "1212" %>
+    <h6>ASMR系の紙</h6>
+    <p>パリッとした音が気持ちいい</p>
+    <p>食べた感想は味がしっかりついて美味しい！知育玩具みたい！</p>
+
+    <% elsif @perfume.question == "1221" %>
+    <h6>フィルム系</h6>
+    <p>完全にフィルム状の見た目</p>
+    <p>食べた感想はオブラート。無味。見た目のインパクトは大きい！！</p>
+
+    <% elsif @perfume.question == "1222" %>
+    <h6>弁当系</h6>
+    <p>日常に可愛さがプラス</p>
+    <p>お弁当が華やかになる</p>
+
+    <% elsif @perfume.question == "2111" %>
+    <h6>ASMR系の紙</h6>
+    <p>パリッとした音が気持ちいい</p>
+    <p>食べた感想は味がしっかりついて美味しい！知育玩具みたい！</p>
+
+    <% elsif @perfume.question == "2112" %>
+    <h6>フィルム系</h6>
+    <p>完全にフィルム状の見た目</p>
+    <p>食べた感想はオブラート。無味。見た目のインパクトは大きい！！</p>
+
+    <% elsif @perfume.question == "2121" %>
+    <h6>ASMR系の紙</h6>
+    <p>パリッとした音が気持ちいい</p>
+    <p>食べた感想は味がしっかりついて美味しい！知育玩具みたい！</p>
+
+    <% elsif @perfume.question == "2122" %>
+    <h6>弁当系</h6>
+    <p>日常に可愛さがプラス</p>
+    <p>お弁当が華やかになる</p>
+
+    <% elsif @perfume.question == "2211" %>
+    <h6>フィルム系</h6>
+    <p>完全にフィルム状の見た目</p>
+    <p>食べた感想はオブラート。無味。見た目のインパクトは大きい！！</p>
+
+    <% elsif @perfume.question == "2212" %>
+    <h6>弁当系</h6>
+    <p>日常に可愛さがプラス</p>
+    <p>お弁当が華やかになる</p>
+
+    <% elsif @perfume.question == "2221" %>
+    <h6>ASMR系の紙</h6>
+    <p>パリッとした音が気持ちいい</p>
+    <p>食べた感想は味がしっかりついて美味しい！知育玩具みたい！</p>
+
+    <% elsif @perfume.question == "2222" %>
+    <h6>弁当系</h6>
+    <p>日常に可愛さがプラス</p>
+    <p>お弁当が華やかになる</p>
+
+    <% end %>
+
+    <div class="sinkitoukou2">
+  <%= link_to "感想新規投稿へ", new_post_path %>
+  </div>
+
+    <div class="parent">
+          <div class="child"><%= link_to "食べられる紙について", taberarerukamis_path %></div>
+          <div class="child"><%= link_to "製法について", seihous_path %></div>
+          <div class="child"><%= link_to "商品紹介", syouhinsyoukais_path %></div>
+        </div>
+
+</div>
+</body>
