@@ -46,4 +46,105 @@
  height: 200px;
  background-color: #FCEFC1;
  font-size: 30px;
+ margin-bottom: 100px;
 }
+
+.shopBox {
+    border: 1px solid #192F60;
+    border-radius: 10px;
+    padding: 30px 15px;
+    margin: 30px 0;
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .shopBox {
+      padding: 30px 30px 0;
+    }
+      .shopBox_contents{
+          display: flex;
+    }
+      .shopBox_inner_right{
+          flex: 1;
+          margin-left: 30px;
+      }
+  }
+  
+  .shopBox_img a {
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+            filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  }
+  
+  .shopBox_title a {
+    color: black;
+    font-size: 1.1em;
+    text-decoration: underline;
+  }
+  
+  .shopBox_title p {
+    font-size: .9em;
+    margin-top: .5em;
+    margin-bottom: 10px;
+  }
+  
+  .shopBox_btn_item {
+    border-radius: 10px;
+    margin-top: 15px;
+    -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+            filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .shopBox_img, .shopBox_btn_item {
+      text-align: center;
+    }
+  }
+  
+  .entry-content .shopBox .shopBox_btn .shopBox_btn_item::before{
+      display: none;
+  }
+  .entry-content .shopBox .shopBox_btn .shopBox_btn_item{
+      padding-left: 0;
+  }
+  @media only screen and (min-width: 769px) {
+      .entry-content .shopBox .shopBox_btn .shopBox_btn_item:not(:first-child){
+          margin-left: 5px;
+      }
+  }
+  
+  .entry-content .shopBox .shopBox_btn .shopBox_btn_item a:hover{
+      color: #fff;
+  }
+  
+  .shopBox_btn_item a {
+    padding: 7px 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .shopBox_btn_item {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+  
+  .shopBox_btn .amazon {
+    background-color: #FF9901;
+  }
+  
+  .shopBox_btn .kindle {
+    background-color: #007dcd;
+  }
+  
+  .shopBox_btn .rakuten {
+    background-color: #c20004;
+  }
+  
+  .shopBox_btn .rakutenkobo {
+    background-color: #E32F2F;
+  }
+  
+  .shopBox_btn .other {
+    background-color: #81d8d1;
+  }

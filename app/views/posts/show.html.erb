@@ -1,22 +1,29 @@
-<h3>新規投稿ページ</h3>
+<body class="post">
+
+<h1>感想編集完了ページ</h1>
+<div class="arigata">
+<br>
+編集はこれで完了です！<br>
+<br>
+わざわざ感想編集してくれてありがとうございます！！<br>
+<br>
+<br>
+<br>
+</div>
 
 
 
-<%= form_for @posts do |f| %>
-  <div class="field">
-    <%= f.label :image %>
-    <%= f.file_field :image %>
-  </div>
-  <%= f.label :content,"内容" %>
-  <%= f.text_field :kansou, :size => 50%>
-  <%= f.select :category, [["ASMR系の紙", "ASMR系の紙"], ["フィルム系", "フィルム系"], ["弁当系", "弁当系"]], include_blank: "どの投稿？" %>
-  
-
-  <%= f.submit "投稿する" %>
- <% end %>
-
- 
-
-
- 
-<%= link_to "一覧に戻る", posts_path %>
+ <div class="itiran">
+ <div class="hr">
+        </div>
+        <div class="hr4">
+        </div> 
+        <div class= "yagi">
+        <h4><%= link_to "感想一覧ページへ→", posts_path %></h4>
+        </div>
+        <div class="hr2">
+        </div>   
+        <div class="hr3">
+        </div> 
+ </div>
+</body>
